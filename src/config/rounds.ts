@@ -23,7 +23,7 @@ export const rounds: Round[] = [
       "Investigate an ancient artifact image to uncover a hidden message and locate the first Time Fragment.",
     fragment: "TF-01 // ALPHA",
     motif: "ancient",
-    url: "",
+    url: "https://round1-deploy-chi.vercel.app/",
   },
   {
     id: "architects-blueprint",
@@ -35,7 +35,7 @@ export const rounds: Round[] = [
       "Use equations and a coordinate plane to reconstruct a medieval structure and reveal the location of the second fragment.",
     fragment: "TF-02 // BETA",
     motif: "medieval",
-    url: "",
+    url: "https://nithya-99720.github.io/lost-timeline-round2/",
   },
   {
     id: "factory-meltdown",
@@ -47,7 +47,7 @@ export const rounds: Round[] = [
       "Program and connect electronic components to restore a factory control system and recover the third fragment.",
     fragment: "TF-03 // GAMMA",
     motif: "industrial",
-    url: "",
+    url: "https://aarohan-26-factory-meltdown.vercel.app/",
   },
   {
     id: "temporal-lock",
