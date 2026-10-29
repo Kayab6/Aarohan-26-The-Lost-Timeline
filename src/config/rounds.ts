@@ -35,7 +35,7 @@ export const rounds: Round[] = [
       "Use equations and a coordinate plane to reconstruct a medieval structure and reveal the location of the second fragment.",
     fragment: "TF-02 // BETA",
     motif: "medieval",
-    url: "",
+    url: "https://nithya-99720.github.io/lost-timeline-round2/",
   },
   {
     id: "factory-meltdown",
