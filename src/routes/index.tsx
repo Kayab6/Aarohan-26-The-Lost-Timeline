@@ -25,7 +25,7 @@ function Home() {
   const fade = (d: number) => (reduce ? {} : { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.8, delay: d } });
   return (
     <>
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-20 pt-12 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
+      <section className="mx-auto grid max-w-7xl items-center gap-10 overflow-x-clip px-5 pb-20 pt-12 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
         <div>
           <motion.p {...fade(0)} className="label-mono text-cyan">Temporal Research Division // 3026</motion.p>
           <motion.h1 {...fade(0.1)} className="mt-6 font-display text-[clamp(3rem,10vw,7rem)] font-extrabold leading-[0.9] tracking-tight text-gradient">
