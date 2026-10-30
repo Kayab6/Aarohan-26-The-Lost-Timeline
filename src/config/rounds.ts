@@ -25,7 +25,7 @@ export const rounds: Round[] = [
     fragment: "TF-01 // ALPHA",
     motif: "ancient",
     url: "https://round1-deploy-chi.vercel.app/",
-    videoUrl: "https://www.youtube.com/embed/xvT1jH8B9AM",
+    videoUrl: "https://www.youtube.com/embed/WGCtohX_FbM",
   },
   {
     id: "architects-blueprint",
@@ -38,7 +38,7 @@ export const rounds: Round[] = [
     fragment: "TF-02 // BETA",
     motif: "medieval",
     url: "https://nithya-99720.github.io/lost-timeline-round2/",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_ROUND_02",
+    videoUrl: "https://www.youtube.com/embed/Y5NNgW8DuoQ",
   },
   {
     id: "factory-meltdown",
@@ -51,7 +51,7 @@ export const rounds: Round[] = [
     fragment: "TF-03 // GAMMA",
     motif: "industrial",
     url: "https://aarohan-26-factory-meltdown.vercel.app/",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_ROUND_03",
+    videoUrl: "https://www.youtube.com/embed/thlcC8KyDII",
   },
   {
     id: "temporal-lock",
@@ -64,7 +64,7 @@ export const rounds: Round[] = [
     fragment: "TF-04 // OMEGA",
     motif: "future",
     url: "https://round4-temporal-lock-frontend.vercel.app/",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_ROUND_04",
+    videoUrl: "https://www.youtube.com/embed/CweUzr9Lou8",
   },
 ];
 
