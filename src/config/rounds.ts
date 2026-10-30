@@ -10,6 +10,7 @@ export type Round = {
   fragment: string;
   motif: "ancient" | "medieval" | "industrial" | "future";
   url: string;
+  videoUrl: string;
 };
 
 export const rounds: Round[] = [
@@ -24,6 +25,7 @@ export const rounds: Round[] = [
     fragment: "TF-01 // ALPHA",
     motif: "ancient",
     url: "https://round1-deploy-chi.vercel.app/",
+    videoUrl: "https://www.youtube.com/embed/xvT1jH8B9AM",
   },
   {
     id: "architects-blueprint",
@@ -36,6 +38,7 @@ export const rounds: Round[] = [
     fragment: "TF-02 // BETA",
     motif: "medieval",
     url: "https://nithya-99720.github.io/lost-timeline-round2/",
+    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_ROUND_02",
   },
   {
     id: "factory-meltdown",
@@ -48,6 +51,7 @@ export const rounds: Round[] = [
     fragment: "TF-03 // GAMMA",
     motif: "industrial",
     url: "https://aarohan-26-factory-meltdown.vercel.app/",
+    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_ROUND_03",
   },
   {
     id: "temporal-lock",
@@ -59,7 +63,8 @@ export const rounds: Round[] = [
       "Construct a circuit using AND, OR, and NOT gates to satisfy the Chrono-Core’s activation conditions and recover the final fragment.",
     fragment: "TF-04 // OMEGA",
     motif: "future",
-    url: "",
+    url: "https://round4-temporal-lock-frontend.vercel.app/",
+    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_ROUND_04",
   },
 ];
 

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Lock } from "lucide-react";
+import { ArrowUpRight, Lock, Play } from "lucide-react";
 import { isRoundOpen, type Round } from "@/config/rounds";
 
 function Motif({ motif }: { motif: Round["motif"] }) {
@@ -48,7 +48,15 @@ function Motif({ motif }: { motif: Round["motif"] }) {
   );
 }
 
-export function MissionCard({ round, compact = false }: { round: Round; compact?: boolean }) {
+export function MissionCard({
+  round,
+  compact = false,
+  onWatchVideo,
+}: {
+  round: Round;
+  compact?: boolean;
+  onWatchVideo?: (round: Round) => void;
+}) {
   const open = isRoundOpen(round);
   return (
     <article className="panel corner-marks group flex h-full flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-cyan/40 hover:shadow-[var(--glow-cyan)]">
@@ -72,13 +80,27 @@ export function MissionCard({ round, compact = false }: { round: Round; compact?
         <div className="mt-auto pt-6">
           <p className="label-mono mb-4 text-muted-foreground">Fragment · <span className="text-foreground">{round.fragment}</span></p>
           {!compact && (open ? (
-            <a href={round.url} target="_blank" rel="noopener noreferrer" className="btn-primary w-full justify-center">
-              Enter portal <ArrowUpRight size={16} /><span className="sr-only">(opens in a new tab)</span>
-            </a>
+            <>
+              <a href={round.url} target="_blank" rel="noopener noreferrer" className="btn-primary w-full justify-center">
+                Enter portal <ArrowUpRight size={16} /><span className="sr-only">(opens in a new tab)</span>
+              </a>
+              {onWatchVideo && (
+                <button type="button" className="btn-ghost mt-3 w-full justify-center" onClick={() => onWatchVideo(round)}>
+                  <Play size={14} /> Watch video
+                </button>
+              )}
+            </>
           ) : (
-            <button type="button" disabled aria-disabled="true" className="btn-ghost w-full cursor-not-allowed justify-center opacity-60 hover:!translate-y-0 hover:!bg-transparent">
-              <Lock size={14} /> Coming soon
-            </button>
+            <>
+              <button type="button" disabled aria-disabled="true" className="btn-ghost w-full cursor-not-allowed justify-center opacity-60 hover:!translate-y-0 hover:!bg-transparent">
+                <Lock size={14} /> Coming soon
+              </button>
+              {onWatchVideo && (
+                <button type="button" className="btn-ghost mt-3 w-full justify-center" onClick={() => onWatchVideo(round)}>
+                  <Play size={14} /> Watch video
+                </button>
+              )}
+            </>
           ))}
         </div>
       </div>
